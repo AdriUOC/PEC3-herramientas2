@@ -5,23 +5,81 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Participantes</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+  <body class="font-sans text-base leading-6 text-black bg-white">
+    <nav class="m-8">
+      <ul class="flex">
+          <img src="assets/images/logoTennis.png" class="topIcon" alt="Tennis">
+          <li class="m-8">
+            <a class="text-black hover:text-blue-500 text-lg font-bold" href="/src/index.html">Participantes</a>
+          </li>
+          <li class="m-8">
+            <a class="text-black hover:text-blue-500" href="/src/noticias.html">Noticias</a>
+          </li>
+      </ul>
+    </nav>
+
+    <h1 class="font-serif text-4xl font-bold text-black text-center"><i class="fa-solid fa-person"></i>Lista de participantes del Megatorneo<i class="fa-solid fa-person"></i></h1>
+    <p class="text-center">¡Incluye la información de su ranking mundial actual en su disciplina!</p>
+
+    <div class="flex flex-wrap justify-between m-20 text-center border-t-2 border-t-black border-b-2 border-b-black">
+
+      <include src="./views/djokovic.html"></include>
+
+      <include src="./views/alcaraz.html"></include>
+      
+      <div>
+        <img class="rounded-3xl" src="./assets/images/Rune.jpg?width=800" alt="Rune">
+        <h2 class="mt-4 font-bold text-3xl">Holger Rune</h2>
+        <h3 class="mb-20 font-medium text-2xl">Un poco rancio pero se le da bien este deporte.</h3>
+      </div>
+      <div>
+        <img class="rounded-3xl" src="./assets/images/dimitrov.jpg?width=800" alt="Dimitrov">
+        <h2 class="mt-4 font-bold text-3xl">Grigor Dimitrov</h2>
+        <h3 class="mb-20 font-medium text-2xl">Es un bicho, de los más peligrosos del circuito.</h3>
+      </div>
+      <div>
+        <img class="rounded-3xl" src="./assets/images/norrie.jpg?width=800" alt="Norrie">
+        <h2 class="mt-4 font-bold text-3xl">Cameron Norrie</h2>
+        <h3 class="mb-20 font-medium text-2xl">Habla inglés, que siempre es ventajoso con los arbitros.</h3>
+      </div>
+      <div>
+        <img class="rounded-3xl" src="./assets/images/fokina.jpg?width=800" alt="Fokina">
+        <h2 class="mt-4 font-bold text-3xl">Alejandro Davidovich Fokina</h2>
+        <h3 class="mb-20 font-medium text-2xl">Podría ser ruso, pero es de Málaga.</h3>
+      </div>
+      <div>
+        <img class="rounded-3xl" src="./assets/images/musetti.jpg?width=800" alt="Musetti">
+        <h2 class="mt-4 font-bold text-3xl">Lorenzo Musetti</h2>
+        <h3 class="mb-20 font-medium text-2xl">Tenista de día, pizzariolo de noche.</h3>
+      </div>
+      <div>
+        <img class="rounded-3xl" src="./assets/images/bublik.jpg?width=800" alt="Bublik">
+        <h2 class="mt-4 font-bold text-3xl">Alexander Bublik</h2>
+        <h3 class="mb-20 font-medium text-2xl">Podría ser jugador de Lol, pero es profesional de tenis.</h3>
+      </div>
     </div>
-    <include src="./views/footer.html"></include>
+
+    <div class="flex justify-center mb-20">
+      <button class="btn-mencion">
+        Pincha aquí para mención honorífica secreta</button>
+    </div>
+
+    <footer class="mt-6 text-xs">
+      <nav class="m-8">
+        <ul class="flex justify-center">
+            <img src="assets/images/logoTennis.png" class="w-1/12 bg-transparent border-transparent" alt="Tennis">
+            <li class="m-8">
+              <a class="text-black hover:text-blue-500 text-lg font-bold" href="/src/index.html">Participantes</a>
+            </li>
+            <li class="m-8">
+              <a class="text-black hover:text-blue-500" href="/src/noticias.html">Noticias</a>
+            </li>
+        </ul>
+      </nav>
+    </footer>
+
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
